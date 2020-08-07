@@ -1,0 +1,288 @@
+.header
+  left: 0
+  position: fixed
+  right: 0
+  top: 0
+  z-index: 10
+
+  &__top
+    background-color: #808080
+    color: #fff
+
+  &__top-inner
+    align-items: center
+    display: flex
+    padding-top: 12px
+    padding-bottom: 12px
+
+    @media(min-width: 1000px)
+      font-size: 17px
+      line-height: 20px
+      padding-top: 17px
+      padding-bottom: 17px
+
+  &__logo
+    align-items: center
+    color: #fff
+    display: flex
+    line-height: 12px
+    margin-right: auto
+
+    @media(min-width: 768px)
+      line-height: 16px
+
+  &__logo-image
+    height: 28px
+    min-width: 28px
+    margin-right: 5px
+    width: 28px
+
+    @media(min-width: 768px)
+      height: 46px
+      min-width: 46px
+      margin-right: 10px
+      width: 46px
+
+    @media(min-width: 1000px)
+      height: 65px
+      min-width: 65px
+      width: 65px
+
+  &__top-email
+    display: none
+    margin-right: 20px
+
+    @media(min-width: 600px)
+      display: block
+
+    @media(min-width: 768px)
+      margin-right: 30px
+
+    @media(min-width: 1000px)
+      margin-right: 47px
+
+    .icon
+      fill: #fff
+      height: 24px
+      margin-right: 5px
+      min-width: 24px
+      width: 24px
+
+      @media(min-width: 600px)
+        height: 20px
+        min-width: 20px
+        margin-right: 10px
+        width: 20px
+
+  &__top-clock
+    align-items: center
+    display: flex
+    margin-right: 20px
+    width: 90px
+
+    @media(min-width: 600px)
+      width: auto
+
+    @media(min-width: 768px)
+      margin-right: 30px
+
+    @media(min-width: 1000px)
+      margin-right: 47px
+
+    .icon
+      fill: #fff
+      height: 24px
+      margin-right: 5px
+      min-width: 24px
+      width: 24px
+
+      @media(min-width: 600px)
+        height: 20px
+        min-width: 20px
+        margin-right: 10px
+        width: 20px
+
+  &__top-link
+    align-items: center
+    color: #fff
+    display: flex
+    text-decoration: none
+
+  &__top-phone
+    .icon
+      fill: #fff
+      height: 25px
+      min-width: 25px
+      width: 25px
+
+      @media(min-width: 600px)
+        height: 20px
+        margin-right: 10px
+        min-width: 20px
+        width: 20px
+
+    .text
+      display: none
+
+      @media(min-width: 600px)
+        display: block
+
+  &__bottom
+    padding-top: 20px
+
+    @media(min-width: 768px)
+      background-color: #fff
+      padding-bottom: 20px
+
+  &__bottom-inner
+    align-items: center
+    display: flex
+
+  &__menu-block
+    background-color: #F1F1F1
+    background-image: url('../images/decor/menu.png')
+    background-repeat: no-repeat
+    background-size: 193px auto
+    background-position: 100% 100%
+    display: none
+    height: 100vh
+    left: 0
+    position: fixed
+    padding-left: 15px
+    padding-right: 15px
+    padding-top: 40px
+    top: 0
+    width: 100%
+    z-index: 100
+
+    &.is-open
+      display: flex
+      flex-direction: column
+
+    @media(min-width: 768px)
+      align-items: center
+      background-color: transparent
+      background-image: none
+      display: flex
+      flex-grow: 1
+      flex-direction: row
+      height: auto
+      position: static
+      padding: 0
+
+  &__location
+    align-items: center
+    color: #000
+    display: flex
+    font-size: 17px
+    line-height: 20px
+    text-decoration: none
+
+    @media(min-width: 768px)
+      font-size: 15px
+
+    @media(min-width: 1000px)
+      font-size: 18px
+
+    .icon
+      fill: #000
+      height: 20px
+      margin-right: 5px
+      width: 20px
+
+    .text
+      border-bottom: 1px dashed rgba(#000, 0.5)
+
+  &__cart-link
+    margin-right: 20px
+    margin-left: auto
+
+    @media(min-width: 768px)
+      margin-right: 0
+
+    .icon
+      fill: #D42428
+      height: 25px
+      width: 25px
+
+      @media(min-width: 1000px)
+        height: 35px
+        width: 35px
+
+  &__menu-opener
+    background-color: #fff
+    border: none
+    cursor: pointer
+    height: 25px
+    padding: 0
+    width: 25px
+
+    @media(min-width: 768px)
+      display: none
+
+    .icon
+      height: 17px
+      width: 25px
+
+  &__menu-closer
+    background-color: transparent
+    border: none
+    cursor: pointer
+    height: 25px
+    left: auto
+    padding: 0
+    position: absolute
+    right: 15px
+    top: 37px
+    width: 25px
+
+    @media(min-width: 768px)
+      display: none
+
+    .icon
+      height: 25px
+      width: 25px
+
+.main-menu
+  font-size: 18px
+  list-style: none
+  margin-top: auto
+  margin-bottom: auto
+  padding: 0
+  text-transform: uppercase
+
+  @media(min-width: 768px)
+    display: flex
+    font-size: 15px
+    margin-left: auto
+    margin-right: 40px
+    text-transform: none
+
+  @media(min-width: 1000px)
+    font-size: 18px
+    margin-right: 60px
+
+  &__item
+    &:not(:last-child)
+      margin-bottom: 45px
+
+      @media(min-width: 768px)
+        margin-right: 30px
+        margin-bottom: 0
+
+      @media(min-width: 1000px)
+        margin-right: 45px
+
+  &__link
+    border-bottom: 5px solid transparent
+    color: #000
+    display: inline-block
+    padding-top: 5px
+    padding-bottom: 5px
+    text-decoration: none
+
+    @media(min-width: 768px)
+      border-bottom-width: 2px
+
+    &.is-active
+      border-bottom-color: #D42428

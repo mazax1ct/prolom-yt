@@ -1,0 +1,204 @@
+.footer
+  background-color: #000
+  color: #fff
+  padding-top: 15px
+  padding-bottom: 30px
+
+  @media(min-width: 768px)
+    padding-top: 30px
+    padding-bottom: 40px
+
+  &__inner
+    position: relative
+
+    @media(min-width: 600px)
+      display: flex
+      flex-wrap: wrap
+
+    @media(min-width: 1000px)
+      padding-left: 40px
+      padding-right: 40px
+
+  &__title
+    font-size: 14px
+    font-weight: 700
+    line-height: 20px
+    margin-bottom: 10px
+    text-transform: uppercase
+
+    @media(min-width: 768px)
+      margin-bottom: 18px
+
+  &__left
+    display: flex
+    margin-bottom: 30px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+
+    @media(min-width: 1000px)
+      width: 260px
+
+  &__left-block
+    min-width: 80px
+
+    &:not(:last-child)
+      margin-right: 20px
+
+  &__center
+    margin-bottom: 40px
+    width: 240px
+
+    @media(min-width: 768px)
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 0
+
+    @media(min-width: 1000px)
+      margin-left: 100px
+
+  &__subscribe
+    margin-bottom: 30px
+    position: relative
+
+    @media(min-width: 768px)
+      margin-bottom: 45px
+
+  &__subscribe-input
+    background-color: rgba(#DAE7EF, 0.4)
+    border: none
+    color: #fff
+    font-size: 10px
+    height: 40px
+    line-height: 16px
+    padding: 12px 5px
+    position: relative
+    width: 100%
+    z-index: 2
+
+    @media(min-width: 768px)
+      font-size: 14px
+
+    &::-webkit-input-placeholder
+      color: #fff
+      opacity: 1
+
+    &::-moz-placeholder
+      color: #fff
+      opacity: 1
+
+    &:-ms-input-placeholder
+      color: #fff
+      opacity: 1
+
+  &__subscribe-submit
+    background-color: transparent
+    border: none
+    height: 40px
+    left: 0
+    position: absolute
+    top: 0
+    width: 40px
+    z-index: 1
+
+  &__socials
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    margin-right: -4px
+    margin-left: -4px
+
+    @media(min-width: 768px)
+      margin-right: -7px
+      margin-left: -7px
+
+  &__social
+    align-items: center
+    background-color: #fff
+    border-radius: 50%
+    display: flex
+    height: 30px
+    justify-content: center
+    margin-right: 4px
+    margin-left: 4px
+    margin-bottom: 8px
+    width: 30px
+
+    @media(min-width: 768px)
+      margin-right: 7px
+      margin-left: 7px
+
+    .icon
+      fill: #000
+      height: 28px
+      width: 28px
+
+  &__contact
+    margin-bottom: 5px
+
+    @media(min-width: 768px)
+      font-size: 14px
+      line-height: 20px
+
+    a
+      color: #fff
+      text-decoration: none
+
+  &__payments
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    margin-top: 30px
+
+    @media(min-width: 768px)
+      margin-top: 45px
+
+    img
+      width: 20px
+
+      &:not(:last-child)
+        margin-right: 10px
+
+      @media(min-width: 768px)
+        width: 25px
+
+      @media(min-width: 1000px)
+        width: 30px
+
+  &__copyright
+    margin-top: 60px
+    width: 100%
+
+    @media(min-width: 768px)
+      bottom: 0
+      margin-top: 0
+      left: 15px
+      position: absolute
+      top: auto
+      width: auto
+      z-index: 1
+
+    @media(min-width: 1000px)
+      left: 40px
+
+.footer-menu
+  list-style: none
+  margin: 0
+  padding: 0
+
+  @media(min-width: 768px)
+    font-size: 14px
+
+  &__item
+    &:not(:last-child)
+      margin-bottom: 5px
+
+      @media(min-width: 768px)
+        margin-bottom: 10px
+
+  &__link
+    color: #fff
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
