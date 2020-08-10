@@ -1,0 +1,107 @@
+.fu-block
+  align-items: center
+  display: flex
+  margin-bottom: 70px
+
+  @media(min-width: 1000px)
+    margin-bottom: 150px
+
+  &__image
+    min-width: 150px
+    width: 150px
+
+    @media(min-width: 375px)
+      min-width: 180px
+      width: 180px
+
+    @media(min-width: 768px)
+      min-width: 300px
+      width: 300px
+
+    @media(min-width: 1000px)
+      min-width: 460px
+      position: relative
+      width: 460px
+      z-index: 2
+
+  &__text-block
+    flex-grow: 1
+    max-width: 600px
+    padding-left: 5px
+    position: relative
+    z-index: 1
+
+    @media(min-width: 1000px)
+      margin-left: -15px
+      padding-left: 0
+
+    &::after
+      @media(min-width: 1100px)
+        background: url('../images/decor/plant.svg') 0 0 transparent
+        bottom: 0
+        content: ''
+        height: 348px
+        left: auto
+        position: absolute
+        right: 0
+        transform: translateX(45%)
+        top: auto
+        width: 128px
+
+  &__text
+    @media(min-width: 768px)
+      background: url('../images/decor/window.svg') no-repeat 0 0 #EFEFEF
+      height: 373px
+
+      @media(min-width: 1000px)
+        height: 572px
+
+  &__text-inner
+    max-height: 150px
+    overflow-y: auto
+
+    @media(min-width: 375px)
+      max-height: 180px
+
+    @media(min-width: 768px)
+      font-size: 18px
+      line-height: 30px
+      max-height: 300px
+      max-width: 505px
+      padding-left: 30px
+      padding-right: 30px
+
+    @media(min-width: 1000px)
+      background: url('../images/decor/arrow.svg') no-repeat 100% 0 transparent
+      max-height: 485px
+      overflow: hidden
+
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+
+      li
+        &::before
+          content: '▲'
+
+          @media(min-width: 768px)
+            font-size: 14px
+            margin-right: 5px
+
+  &__text-inner-inner
+    @media(min-width: 1000px)
+      max-height: 485px
+      overflow-y: auto
+      width: 495px
+
+  &__title
+    font-size: 15px
+    margin-bottom: 15px
+    margin-top: 0
+    text-transform: uppercase
+
+    @media(min-width: 768px)
+      font-size: 24px
+      line-height: 43px
+      padding-left: 88px

@@ -1,0 +1,93 @@
+.main-banner
+  margin-bottom: 50px
+  overflow: hidden
+
+  @media(min-width: 1000px)
+    margin-bottom: 100px
+    padding-bottom: 80px
+
+  &__inner
+    @media(min-width: 600px)
+      align-items: center
+      display: flex
+      justify-content: space-between
+
+  &__text
+    margin-bottom: 15px
+    position: relative
+    text-align: center
+    z-index: 1
+
+    @media(min-width: 600px)
+      margin-bottom: 0
+      text-align: left
+
+    h1
+      display: inline-block
+      font-family: 'Oswald', 'Roboto', Arial, sans-serif
+      font-size: 25px
+      line-height: 1.2
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 20px
+      text-align: left
+      white-space: nowrap
+
+      @media(min-width: 768px)
+        font-size: 40px
+        margin-bottom: 50px
+
+      @media(min-width: 1000px)
+        font-size: 60px
+        margin-bottom: 120px
+
+      span
+        color: $main_color
+
+  &__button
+    background-color: $main_color
+    border: 5px solid $main_color
+    border-radius: 30px
+    color: #fff
+    display: inline-block
+    font-size: 15px
+    font-weight: 700
+    line-height: 15px
+    padding: 15px 30px
+    text-transform: uppercase
+    text-decoration: none
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s
+
+    &:hover
+      background-color: #fff
+      color: $main_color
+
+    &:active
+      background-color: #fff
+      border-color: #000
+      color: #000
+
+    @media(min-width: 1000px)
+      border-radius: 40px
+      font-size: 25px
+      padding: 25px 40px
+      position: relative
+
+    &::after
+      @media(min-width: 1000px)
+        background: url('../images/decor/plane.svg') no-repeat 0 0 transparent
+        content: ''
+        height: 270px
+        left: auto
+        position: absolute
+        right: -170px
+        top: -20px
+        width: 193px
+
+  &__image
+    max-width: 725px
+
+    @media(min-width: 1000px)
+      min-width: 725px
+      margin-left: -122px
+      width: 725px
