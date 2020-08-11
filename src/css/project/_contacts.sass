@@ -1,11 +1,194 @@
 .contacts
+  margin-bottom: 50px
+
+  @media(min-width: 1000px)
+    margin-bottom: 100px
+
   h2
     font-size: 14px
+    line-height: 1.2
     margin-top: 0
     margin-bottom: 30px
+    max-width: 255px
+    margin-left: auto
+    margin-right: auto
     text-align: center
     text-transform: uppercase
 
     @media(min-width: 768px)
       font-size: 24px
+      max-width: 100%
       margin-bottom: 90px
+
+.contact
+  max-width: 250px
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 50px
+
+  @media(min-width: 768px)
+    align-items: center
+    display: flex
+    max-width: 920px
+
+  @media(min-width: 1000px)
+    margin-bottom: 100px
+
+  &--reverse
+    @media(min-width: 768px)
+      flex-direction: row-reverse
+
+  &__text
+    background-color: #EFEFEF
+    margin-bottom: 15px
+    padding: 20px 15px
+
+    @media(min-width: 768px)
+      font-size: 14px
+      flex-grow: 1
+      line-height: 20px
+      margin-bottom: 0
+      max-width: 380px
+      padding: 25px
+
+    &--decor_1
+      position: relative
+
+      &::before
+        @media(min-width: 1000px)
+          background: url('../images/decor/leaf_3.svg') no-repeat 0 0 transparent
+          content: ''
+          height: 372px
+          left: -95px
+          position: absolute
+          top: -95px
+          width: 202px
+          z-index: -1
+
+    &--decor_2
+      position: relative
+
+      &::before
+        background: url('../images/decor/path.svg') no-repeat 0 0 transparent
+        content: ''
+        height: 149px
+        left: auto
+        position: absolute
+        top: -126px
+        right: -40px
+        width: 94px
+        z-index: -1
+
+        @media(min-width: 768px)
+          display: none
+
+        @media(min-width: 1000px)
+          background: url('../images/decor/leaf_4.svg') no-repeat 0 0 transparent
+          content: ''
+          display: block
+          height: 372px
+          left: auto
+          position: absolute
+          right: -95px
+          top: -95px
+          width: 202px
+          z-index: -1
+
+      &::after
+        background: url('../images/decor/leaf_2.svg') no-repeat 0 0 transparent
+        content: ''
+        height: 162px
+        left: -45px
+        position: absolute
+        top: -96px
+        width: 106px
+        z-index: -1
+
+        @media(min-width: 768px)
+          display: none
+
+    h3
+      font-size: 14px
+      font-weight: 400
+      margin-top: 0
+      margin-bottom: 15px
+      text-align: center
+
+      @media(min-width: 768px)
+        font-size: 24px
+        line-height: 30px
+
+  &__row
+    @media(min-width: 768px)
+      display: flex
+      justify-content: space-between
+
+    p
+      margin-top: 0
+      margin-bottom: 0
+
+      &:not(:last-child)
+        margin-bottom: 5px
+
+    h4
+      margin-top: 0
+      margin-bottom: 10px
+
+      @media(min-width: 768px)
+        font-size: 16px
+
+  &__row-block
+    &:not(:last-child)
+      margin-bottom: 20px
+
+      @media(min-width: 768px)
+        margin-bottom: 0
+
+    @media(min-width: 768px)
+      max-width: 150px
+
+  &__row2
+    display: flex
+
+    @media(min-width: 768px)
+      display: block
+
+  &__row2-block
+    width: 50%
+
+    @media(min-width: 768px)
+      width: 100%
+
+    span
+      color: $main_color
+
+  &__map
+    border: 5px solid $main_color
+    border-radius: 20px
+    background-color: #EFEFEF
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    display: block
+    height: 220px
+
+    @media(min-width: 768px)
+      flex-grow: 1
+      height: 380px
+      min-width: 50%
+
+    &--decor
+      position: relative
+
+      &::before
+        background: url('../images/decor/leaf_1.svg') no-repeat 0 0 transparent
+        content: ''
+        height: 154px
+        left: auto
+        position: absolute
+        top: -130px
+        right: -50px
+        width: 83px
+        z-index: -1
+
+        @media(min-width: 768px)
+          display: none
